@@ -1,0 +1,137 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:1em;
+	background:#fff;
+	line-height: 1.5;
+	color: #111;
+	scroll-behavior: smooth;
+}
+img {
+	width:100%;
+	height: auto;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #111;
+	font-size: 0.89em;
+}
+ul li  {
+	display: inline-block;
+}
+ul li a {
+	text-transform: uppercase;
+	padding:0 1em;
+}
+ul li a:hover {
+	text-decoration: underline;
+}
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align:center;
+	margin:1em 0;
+	padding:0.5em 2em;
+}
+.btn-primary {
+	background:#111;
+	color: #fff;
+}
+.btn-secondary {
+	border:2px solid #111;
+}
+.lead {
+	padding-top:1em;
+}
+/* naavbar */
+#navbar {
+	text-align:center;
+	margin:1em 0;
+}
+/*logo*/
+.logo {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+.quote {
+	font-size: 2em;
+	font-weight: lighter;
+	padding:0 0.25em;
+	color: #ccc;
+}
+.grid-three {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:1em;
+}
+/*showcase*/
+#showcase .container{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/showcase.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:75vh;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color:#fff;
+}
+
+#showcase h3 {
+	font-size: 3em;
+	text-transform: capitalize;
+}
+#showcase p {
+	font-size:1.5em;
+	text-transform: capitalize;
+}
+/* home wrapper where all the main design goes for the homepage*/
+.wrapper main {
+	padding:3em 1.5em;
+	margin:2em 0;
+}
+.wrapper .sub-title {
+text-align:center;	
+font-size: 1.5em;
+text-transform: capitalize;
+padding:1em 0;
+} 
+.wrapper main .btn{
+	text-align: center;
+}
+/* services */
+#services {
+	background:#eee;
+}
+/* testimonials */
+#testimonials {
+	
+}
+#testimonials p{
+	text-transform:capitalize;
+	font-size: 1.5em;
+	line-height: 1;
+}
+/* contact */
+#contact {
+	background: #eee;
+}
+/*footer */
+#main-footer {
+	text-align:center;
+	padding:1.5em;
+}
