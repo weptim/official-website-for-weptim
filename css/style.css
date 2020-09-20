@@ -13,6 +13,7 @@ body {
 background:#111;
 	color: #fff;
 }
+
 }
 
 
@@ -28,6 +29,9 @@ background:#111;
 		margin:auto;
 	}
 	.grid-three {
+		grid-template-columns: 1fr;
+	}
+	.grid-two {
 		grid-template-columns: 1fr;
 	}
 	.wrapper main {

@@ -75,6 +75,11 @@ ul li a:hover {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap:1em;
 }
+.grid-two {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 1em;
+}
 /*showcase*/
 #showcase .container{
 	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/showcase.jpg");
