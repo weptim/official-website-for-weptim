@@ -11,6 +11,10 @@ body {
 	color: #111;
 	scroll-behavior: smooth;
 }
+.container {
+	width: 90%;
+	margin:auto;
+}
 img {
 	width:100%;
 	height: auto;
@@ -106,7 +110,7 @@ ul li a:hover {
 }
 /* home wrapper where all the main design goes for the homepage*/
 .wrapper main {
-	padding:3em 1.5em;
+	padding:3em 0;
 	margin:2em 0;
 }
 .wrapper .sub-title {
