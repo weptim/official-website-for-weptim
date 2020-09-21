@@ -35,14 +35,31 @@ ul li  {
 }
 i {
 	font-size: 2em;
+	padding:0.5em;
+	color: #fff;
 }
+input {
+	width: 100%;
+	padding: 0.5em 1em;
+	margin:1em 0;
+}
+input:focus {
+	border: none;
+	outline: none;
+}
+textarea {
+	padding: 5em 2em;
+	width: 100%;
+}
+
+/* buttons */
 .btn {
 	display: inline-block;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align:center;
 	margin-top:2em;
-	padding:0.5em 2em;
+	padding:1em 4em;
 }
 .btn-primary {
 	background:#111;
@@ -65,14 +82,26 @@ i {
 background:#111;
 	color: #fff;	
 }
+/* headings and paragraphs */
+.title {
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+}
+.sub-title {
+	text-align: center;
+	text-transform: capitalize;
+	padding: 1em 0;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
 .lead {
 	padding-top:1em;
 }
-.title {
-	font-size: 2em;
-	font-weight: 400;
-	text-transform: capitalize;
-}
+/* inputs */
+
 /*logo*/
 .logo {
 	font-size: 1.5em;
@@ -95,6 +124,7 @@ background:#111;
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 1em;
 }
+
 /* end of global style */
 /* naavbar */
 #navbar {
@@ -159,8 +189,11 @@ background: #ccc;
 #main-footer {
 text-align: center;
 padding:2em 0;
+background: #111;
+color: #fff;
 }
 #main-footer ul li a {
+	color: #fff;
 	padding:1em;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -170,3 +203,30 @@ padding:2em 0;
 }
 /* end of homepage designs*/
 /* start of about section design*/  
+.about {
+	padding: 5em 0;
+}
+/* end of about section design*/
+/* start of services design*/
+.services {
+	padding: 5em 0;
+}
+.services img {
+	width: 25%;
+	height: auto;
+}
+
+/* start of contact design*/  
+.contact {
+	padding: 5em 0;
+}
+.contact {
+	text-align: center;
+}
+/* end of about contact design*/
+/* start of blog section design*/  
+#recent-blog-posts {
+	padding: 5em 0;
+}
+
+/* end of blog section design*/
