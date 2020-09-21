@@ -1,3 +1,4 @@
+/* global styles */
 * {
 	margin:0;
 	padding:0;
@@ -32,39 +33,47 @@ a {
 ul li  {
 	display: inline-block;
 }
-ul li a {
-	text-transform: uppercase;
-	padding:0 1em;
-}
-ul li a:hover {
-	text-decoration: underline;
-}
+
 .btn {
 	display: inline-block;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align:center;
-	margin:1em 0;
+	margin-top:2em;
 	padding:0.5em 2em;
 }
 .btn-primary {
 	background:#111;
 	color: #fff;
+	transition-property: background;
+	transition-duration: 1s;
 }
 .btn-secondary {
 	border:2px solid #111;
+	transition-property: background;
+	transition-duration: 1s;
+}
+.btn-primary:hover {
+	border: 2px solid #111;
+	background:transparent;
+	color: #111;
+}
+.btn-secondary:hover {
+	border: none;
+background:#111;
+	color: #fff;	
 }
 .lead {
 	padding-top:1em;
 }
-/* naavbar */
-#navbar {
-	text-align:center;
-	margin:1em 0;
+.title {
+	font-size: 2em;
+	font-weight: 400;
+	text-transform: capitalize;
 }
 /*logo*/
 .logo {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight:bold;
 }
@@ -84,13 +93,22 @@ ul li a:hover {
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 1em;
 }
+/* end of global style */
+/* naavbar */
+#navbar {
+	background:#fff;
+	overflow: hidden;
+	padding: 1em;
+	border-bottom: 1px solid lightgrey;
+}
+
 /*showcase*/
-#showcase .container{
+#showcase {
 	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/showcase.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height:75vh;
+	height:100vh;
 	width:100%;
 	display: flex;
 	flex-direction: column;
@@ -102,45 +120,51 @@ ul li a:hover {
 
 #showcase h3 {
 	font-size: 3em;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 #showcase p {
 	font-size:1.5em;
 	text-transform: capitalize;
+	font-weight: 400;
+}
+#showcase .btn {
+background:#111;
+	color: #fff;
+}
+
+#showcase .btn:hover {
+	border: 2px solid #111;
+	background: transparent;
 }
 /* home wrapper where all the main design goes for the homepage*/
-.wrapper main {
-	padding:3em 0;
-	margin:2em 0;
+.wrapper {
+	clear: both;
 }
-.wrapper .sub-title {
-text-align:center;	
-font-size: 1.5em;
-text-transform: capitalize;
-padding:1em 0;
-} 
-.wrapper main .btn{
-	text-align: center;
+.wrapper main {
+	padding: 8em 0;
 }
 /* services */
 #services {
-	background:#eee;
+background: #ccc;
 }
 /* testimonials */
-#testimonials {
-	
-}
-#testimonials p{
-	text-transform:capitalize;
-	font-size: 1.5em;
-	line-height: 1;
-}
 /* contact */
 #contact {
-	background: #eee;
+background: #ccc;
 }
-/*footer */
+/* main-footer */
 #main-footer {
-	text-align:center;
-	padding:1.5em;
+text-align: center;
+padding:2em 0;
 }
+#main-footer ul li a {
+	padding:1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#main-footer ul li a:hover {
+	text-decoration: underline;
+}
+/* end of homepage designs*/
+/* start of about section design*/  
