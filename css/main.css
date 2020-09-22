@@ -20,6 +20,11 @@ img {
 	width:100%;
 	height: auto;
 }
+i {
+	font-size: 2em;
+	padding:0.5em;
+}
+/* list types */
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -33,23 +38,52 @@ a {
 ul li  {
 	display: inline-block;
 }
-i {
-	font-size: 2em;
-	padding:0.5em;
-	color: #fff;
+
+ul li a:hover {
+	text-decoration: underline;
+}
+/* inputs */
+label {
+	text-transform: capitalize;
 }
 input {
 	width: 100%;
-	padding: 0.5em 1em;
+	padding:1em;
 	margin:1em 0;
+	border: 2px solid #555;
+	border-radius: 5px;
 }
-input:focus {
-	border: none;
-	outline: none;
-}
+
 textarea {
 	padding: 5em 2em;
 	width: 100%;
+	border: 2px solid #555;
+	border-radius: 5px;
+	margin:1em 0;
+}
+button {
+	width: 100%;
+	border: none;
+	background: #111;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1em;
+	border-radius: 5px;
+}
+input:focus {
+	border: 2px solid #555;
+	outline: none;
+}
+textarea:focus {
+border:2px solid #555;
+outline: none;
+}
+button:hover {
+	background: transparent;
+	border: 2px solid #111;
+	color: #111;
+	font-weight: bold;
 }
 
 /* buttons */
@@ -124,7 +158,11 @@ background:#111;
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 1em;
 }
-
+.grid-two-one {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
 /* end of global style */
 /* naavbar */
 #navbar {
@@ -191,6 +229,10 @@ text-align: center;
 padding:2em 0;
 background: #111;
 color: #fff;
+font-weight: lighter;
+}
+#main-footer p {
+	padding:0.5em 0;
 }
 #main-footer ul li a {
 	color: #fff;
@@ -201,32 +243,46 @@ color: #fff;
 #main-footer ul li a:hover {
 	text-decoration: underline;
 }
+#main-footer i {
+	color: #fff;
+}
 /* end of homepage designs*/
 /* start of about section design*/  
 .about {
-	padding: 5em 0;
+	padding: 6em 0;
+}
+.about .title {
+	padding-bottom: 1em;
 }
 /* end of about section design*/
 /* start of services design*/
 .services {
-	padding: 5em 0;
-}
-.services img {
-	width: 25%;
-	height: auto;
+	padding: 6em 0;
 }
 
+.services .title {
+	padding-bottom:1em;
+}
 /* start of contact design*/  
 .contact {
-	padding: 5em 0;
+	padding: 6em 0;
 }
 .contact {
 	text-align: center;
 }
+.contact .grid-two {
+	padding-top:1em;
+}
 /* end of about contact design*/
 /* start of blog section design*/  
 #recent-blog-posts {
-	padding: 5em 0;
+	padding: 6em 0;
+	text-align: center;
 }
-
+#recent-blog-posts .title{
+padding-bottom: 1em;
+}
+#recent-blog-posts article {
+	padding-bottom:1em;
+}
 /* end of blog section design*/
