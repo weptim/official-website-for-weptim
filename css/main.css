@@ -48,7 +48,7 @@ label {
 }
 input {
 	width: 100%;
-	padding:1em;
+	padding:0.75em;
 	margin:1em 0;
 	border: 2px solid #555;
 	border-radius: 5px;
@@ -68,7 +68,7 @@ button {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 1em;
+	padding: 0.75em;
 	border-radius: 5px;
 }
 input:focus {
@@ -80,10 +80,7 @@ border:2px solid #555;
 outline: none;
 }
 button:hover {
-	background: transparent;
-	border: 2px solid #111;
-	color: #111;
-	font-weight: bold;
+	background: #222;
 }
 
 /* buttons */
@@ -93,7 +90,7 @@ button:hover {
 	font-weight: bold;
 	text-align:center;
 	margin-top:2em;
-	padding:1em 4em;
+	padding:0.75em 4em;
 }
 .btn-primary {
 	background:#111;
