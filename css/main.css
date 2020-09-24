@@ -45,6 +45,7 @@ ul li a:hover {
 /* inputs */
 label {
 	text-transform: capitalize;
+font-weight: bold;
 }
 input {
 	width: 100%;
@@ -264,7 +265,7 @@ font-weight: lighter;
 .contact {
 	padding: 6em 0;
 }
-.contact {
+.contact p {
 	text-align: center;
 }
 .contact .grid-two {
